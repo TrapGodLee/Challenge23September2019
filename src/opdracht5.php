@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Opdracht 4</title>
+    <title>Opdracht 5</title>
     <style>
         li{
             color: blue;text-decoration:underline;
@@ -15,6 +15,21 @@
     <input type="text" name="boodschap"><br><br>
     <input type="submit" name="submit" value="Verstuur">
 </form>
+
+<!--Javascript removing item-->
+<script>
+
+    function remove(item) {
+
+        document.getElementsByName('remove')[0].value = 'true';
+
+        document.getElementsByName('boodschap')[0].value = item;
+
+        document.getElementsByName('submit')[0].click();
+
+    }
+
+</script>
 
 <!-- PHP submit -->
 <?php session_start(); ?>
